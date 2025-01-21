@@ -40,8 +40,10 @@ A C# compiler (e.g., Visual Studio, Visual Studio Code, or dotnet CLI)
 
 Clone the Repository:
 
+```
 git clone https://github.com/rajputrr/banking-application.git
 cd banking-application
+```
 
 Build the Project:
 
@@ -63,7 +65,7 @@ Press F5 or click "Start Debugging."
 
 Using the dotnet CLI:
 
-dotnet run
+```dotnet run```
 
 # Instructions
 
@@ -82,6 +84,7 @@ Navigate through the menu options:
 Follow the on-screen instructions for each operation.
 
 # Example
+```
 
 Welcome to Banking Application
 Enter your initial balance: 500
@@ -96,6 +99,7 @@ Choose an option: 1
 Enter deposit amount: 1000
 Deposited: $1,000.00. New Balance: $1,500.00
 
+
 --- Menu ---
 1. Deposit
 2. Withdraw
@@ -103,7 +107,7 @@ Deposited: $1,000.00. New Balance: $1,500.00
 4. Exit
 Choose an option: 3
 Current Balance: $1,500.00
-
+```
 # Error Handling
 
 Input validation ensures that invalid or null inputs are handled gracefully.

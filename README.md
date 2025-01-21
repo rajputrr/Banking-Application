@@ -125,11 +125,6 @@ Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request with your improvements or fixes.
 
-License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
 
-Contact
-
-If you have any questions or issues, please feel free to reach out to [your-email@example.com].
 

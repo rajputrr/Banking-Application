@@ -1,8 +1,8 @@
-Banking Application
+# Banking Application
 
 This project is a simple console-based banking application implemented in C#. It allows users to manage their bank accounts with features like deposits, withdrawals, and balance inquiry. The application also includes validation and error handling to ensure a robust user experience.
 
-Features
+# Features
 
 Account Initialization:
 
@@ -26,17 +26,17 @@ Balance Inquiry:
 
 Displays the current account balance.
 
-Error Handling:
+# Error Handling:
 
 Handles invalid inputs, negative deposits, and other edge cases with appropriate messages.
 
-Requirements
+# Requirements
 
 .NET SDK (version 5.0 or higher)
 
 A C# compiler (e.g., Visual Studio, Visual Studio Code, or dotnet CLI)
 
-How to Run
+# How to Run
 
 Clone the Repository:
 
@@ -53,7 +53,7 @@ Build the solution (Ctrl+Shift+B).
 
 Using the dotnet CLI:
 
-dotnet build
+```dotnet build```
 
 Run the Application:
 
@@ -65,7 +65,7 @@ Using the dotnet CLI:
 
 dotnet run
 
-Instructions
+# Instructions
 
 After running the application, you'll be prompted to enter an initial balance.
 
@@ -81,7 +81,7 @@ Navigate through the menu options:
 
 Follow the on-screen instructions for each operation.
 
-Example
+# Example
 
 Welcome to Banking Application
 Enter your initial balance: 500
@@ -104,7 +104,7 @@ Deposited: $1,000.00. New Balance: $1,500.00
 Choose an option: 3
 Current Balance: $1,500.00
 
-Error Handling
+# Error Handling
 
 Input validation ensures that invalid or null inputs are handled gracefully.
 
@@ -114,14 +114,14 @@ Withdrawal operations ensure sufficient balance and daily limits are respected.
 
 General system exceptions are caught and displayed to the user.
 
-File Structure
+# File Structure
 
 .
 ├── Program.cs       // Main application logic
 ├── BankAccount.cs   // Defines the BankAccount class and operations
 └── README.md        // Project instructions and documentation
 
-Contributing
+# Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request with your improvements or fixes.
 

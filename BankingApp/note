@@ -1,0 +1,53 @@
+
+Project Description
+This is a simple console-based banking application where:
+
+A user can deposit and withdraw money.
+The program handles various exceptions (e.g., invalid input, insufficient funds).
+A custom exception is used for negative deposits.
+Demonstrates checked/unchecked arithmetic for balance operations.
+
+
+Features Demonstrated
+try/catch:
+Handles multiple types of exceptions like FormatException, InvalidOperationException, and ArgumentException.
+finally:
+Ensures a message is printed after every operation, whether it succeeded or failed.
+Custom Exceptions:
+NegativeDepositException is used to handle negative deposit attempts.
+checked and unchecked:
+Used during balance operations to demonstrate arithmetic overflow handling.
+SystemException:
+A general exception is caught for any unforeseen errors.
+
+
+The warnings you are encountering indicate potential issues with nullable reference types in your code. These warnings appear because C# is warning you about situations where null values might be passed to methods that do not accept nulls.
+---------------------------------------------------------------------------------
+            Console.Write("Enter your initial balance: ");
+            string? input = Console.ReadLine(); // Nullable input
+            if (string.IsNullOrWhiteSpace(input))
+                throw new ArgumentException("Input cannot be null or empty.");
+
+            decimal initialBalance = decimal.Parse(input);
+            account = new BankAccount(initialBalance);
+            Console.WriteLine("Account created successfully!");
+---------------------------------------------------------------------------------
+EXCEPTION: NULLABLE
+-------------------------------------------------- -------------------------------
+            Console.Write("Enter your initial balance: ");
+            decimal initialBalance = decimal.Parse(Console.ReadLine());
+            account = new BankAccount(initialBalance);
+            Console.WriteLine("Account created successfully!");
+---------------------------------------------------------------------------------
+
+Key Updates
+Nullable Input Check (string?):
+
+Use string? for nullable string input from Console.ReadLine().
+Add checks for null or empty input using string.IsNullOrWhiteSpace().
+Handle Null or Empty Strings:
+
+Before parsing, check for null or empty strings and throw an appropriate exception.
+Safe Parsing:
+
+Ensure all decimal.Parse() and int.Parse() calls handle potential null inputs gracefully.
